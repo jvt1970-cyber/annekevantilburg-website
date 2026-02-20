@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Anneke van Tilburg</title>
+  <meta name="description" content="Ontdek de intuïtieve schilderijen van Anneke van Tilburg — gedurfd, emotioneel en levend. Originele werken beschikbaar.">
+  <link rel="alternate" hreflang="nl" href="gallery.html">
+  <link rel="alternate" hreflang="en" href="../en/gallery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <nav id="main-nav" aria-label="Hoofdnavigatie">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Anneke van Tilburg</a>
+      <div class="nav-links">
+        <a href="painting.html"   class="nav-link">Schilderworkshops</a>
+        <a href="djsets.html"     class="nav-link">Boek DJ Sets</a>
+        <a href="farmdances.html" class="nav-link">Boerderijdansen</a>
+        <a href="gallery.html"    class="nav-link active">Galerie</a>
+        <a href="coaching.html"   class="nav-link">Coaching</a>
+        <a href="about.html"      class="nav-link">Over Mij</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <a href="../en/gallery.html" class="lang-btn">EN</a>
+          <span class="lang-sep">/</span>
+          <a href="gallery.html" class="lang-btn active">NL</a>
+        </div>
+        <a href="contact.html" class="btn-nav">Contact</a>
+        <button class="hamburger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="menu-overlay" id="menu-overlay" role="dialog">
+    <button class="menu-close" aria-label="Menu sluiten">✕</button>
+    <nav class="overlay-nav">
+      <a href="painting.html">Schilderworkshops</a>
+      <a href="djsets.html">Boek DJ Sets</a>
+      <a href="farmdances.html">Boerderijdansen</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="about.html">Over Mij</a>
+      <a href="contact.html">Contact</a>
+      <div class="overlay-lang"><a href="../en/gallery.html">EN</a> / <a href="gallery.html" class="active">NL</a></div>
+    </nav>
+  </div>
+
+  <header style="padding: calc(var(--nav-height) + 60px) 40px 60px; background:var(--cream); text-align:center;">
+    <p class="eyebrow fade-up">Originele Werken</p>
+    <h1 class="fade-up delay-1" style="color:var(--dark); margin:12px 0 20px;">Galerie</h1>
+    <p class="lead fade-up delay-2" style="max-width:520px; margin:0 auto;">Gedurfd, emotioneel, levend. Elk schilderij houdt een wereld. Klik op een afbeelding om het volledig te bekijken.</p>
+  </header>
+
+  <section class="gallery-section">
+    <div class="gallery-filters fade-up">
+      <button class="filter-btn active" data-filter="all">Alle Werken</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+      <button class="filter-btn" data-filter="figurative">Figuratief</button>
+      <button class="filter-btn" data-filter="nature">Natuur</button>
+    </div>
+
+    <!--
+      GALERIE INSTRUCTIES:
+      Om echte schilderijen toe te voegen:
+      1. Vervang elke href door de URL/het pad van de afbeelding op ware grootte
+      2. Werk data-pswp-width en data-pswp-height bij naar de werkelijke afmetingen
+      3. Vervang img src door thumbnail URL/pad
+      4. Werk de alt-tekst bij met de naam van het schilderij
+      5. Werk de .masonry-caption tekst bij met titel en medium
+
+      Alle afbeeldingen zijn placeholders van picsum.photos — vervang deze wanneer het echte werk klaar is.
+    -->
+
+    <div id="gallery" class="masonry-grid">
+
+      <a href="https://picsum.photos/seed/gal1/1200/900" data-pswp-width="1200" data-pswp-height="900" class="masonry-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/gal1/600/450" alt="Zonder Titel I — Abstract" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Zonder Titel I · Acryl op doek · 60×80cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal2/900/1200" data-pswp-width="900" data-pswp-height="1200" class="masonry-item" data-category="figurative">
+        <img src="https://picsum.photos/seed/gal2/450/600" alt="Opstijgen — Figuratief" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Opstijgen · Mixed media · 80×100cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal3/1200/800" data-pswp-width="1200" data-pswp-height="800" class="masonry-item" data-category="nature">
+        <img src="https://picsum.photos/seed/gal3/600/400" alt="Groen Wild — Natuur" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Groen Wild · Acryl op doek · 100×70cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal4/1000/1300" data-pswp-width="1000" data-pswp-height="1300" class="masonry-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/gal4/500/650" alt="Terra — Abstract" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Terra · Olieverf op doek · 70×90cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal5/1100/900" data-pswp-width="1100" data-pswp-height="900" class="masonry-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/gal5/550/450" alt="Branden — Abstract" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Branden · Acryl op doek · 80×65cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal6/900/1100" data-pswp-width="900" data-pswp-height="1100" class="masonry-item" data-category="figurative">
+        <img src="https://picsum.photos/seed/gal6/450/550" alt="Zij Danst — Figuratief" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Zij Danst · Mixed media · 60×75cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal7/1300/900" data-pswp-width="1300" data-pswp-height="900" class="masonry-item" data-category="nature">
+        <img src="https://picsum.photos/seed/gal7/650/450" alt="Bosbodem — Natuur" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Bosbodem · Acryl op doek · 100×70cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal8/900/900" data-pswp-width="900" data-pswp-height="900" class="masonry-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/gal8/450/450" alt="Goud — Abstract" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Goud · Mixed media · 60×60cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal9/800/1200" data-pswp-width="800" data-pswp-height="1200" class="masonry-item" data-category="figurative">
+        <img src="https://picsum.photos/seed/gal9/400/600" alt="Wortels — Figuratief" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Wortels · Olieverf op doek · 50×75cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal10/1200/700" data-pswp-width="1200" data-pswp-height="700" class="masonry-item" data-category="nature">
+        <img src="https://picsum.photos/seed/gal10/600/350" alt="Wijd Open — Natuur" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Wijd Open · Acryl op doek · 120×70cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal11/950/1200" data-pswp-width="950" data-pswp-height="1200" class="masonry-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/gal11/475/600" alt="Diepte — Abstract" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Diepte · Mixed media · 70×90cm</span>
+      </a>
+
+      <a href="https://picsum.photos/seed/gal12/1100/750" data-pswp-width="1100" data-pswp-height="750" class="masonry-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/gal12/550/375" alt="Rode Aarde — Abstract" loading="lazy">
+        <div class="masonry-overlay"><span>+</span></div>
+        <span class="masonry-caption" style="display:none;">Rode Aarde · Acryl op doek · 90×60cm</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section style="padding:80px 40px; background:var(--cream-dark); text-align:center;">
+    <p class="eyebrow fade-up">Originele werken</p>
+    <h2 class="fade-up delay-1" style="color:var(--dark); margin:12px 0 20px;">Geïnteresseerd in een schilderij?</h2>
+    <p class="fade-up delay-2" style="max-width:480px; margin:0 auto 40px; color:var(--text-mid);">Elk schilderij is een uniek origineel. Neem contact op met Anneke voor beschikbaarheid, prijzen of om een bezichtiging te regelen.</p>
+    <a href="contact.html" class="btn btn-primary fade-up delay-3">Neem Contact Op</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Anneke van Tilburg</a>
+          <p>Intuïtief schilder, ecstatische dans DJ en belichaamd coach.</p>
+          <div class="footer-social">
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h5>Verkennen</h5><ul><li><a href="painting.html">Schilderworkshops</a></li><li><a href="djsets.html">Boek DJ Sets</a></li><li><a href="farmdances.html">Boerderijdansen</a></li><li><a href="gallery.html">Galerie</a></li><li><a href="coaching.html">Coaching</a></li></ul></div>
+        <div class="footer-col"><h5>Verbinden</h5><ul><li><a href="about.html">Over Anneke</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@annekevantilburg.nl">info@annekevantilburg.nl</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Anneke van Tilburg. Alle rechten voorbehouden.</p>
+        <p>Gemaakt met zorg en kleur.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script type="module" src="../js/gallery.js"></script>
+</body>
+</html>
