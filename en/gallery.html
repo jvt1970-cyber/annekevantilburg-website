@@ -80,137 +80,97 @@
 
   <!-- Gallery section -->
   <section class="gallery-section">
-    <!-- Filter buttons -->
-    <div class="gallery-filters fade-up">
-      <button class="filter-btn active" data-filter="all">All Works</button>
-      <button class="filter-btn" data-filter="abstract">Abstract</button>
-      <button class="filter-btn" data-filter="figurative">Figurative</button>
-      <button class="filter-btn" data-filter="nature">Nature</button>
+    <div class="gallery-carousel" id="gallery">
+      <button class="carousel-btn carousel-prev" aria-label="Previous slide" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+
+          <!-- Slide 1: painting1, painting2, painting14 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting1.jpeg" data-pswp-width="2515" data-pswp-height="3670" class="carousel-painting">
+              <img src="../images/gallery/painting1.jpeg" alt="Painting 1" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 1 · Acrylic on canvas</span>
+            </a>
+            <a href="../images/gallery/painting2.jpeg" data-pswp-width="1397" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting2.jpeg" alt="Painting 2" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 2 · Mixed media</span>
+            </a>
+            <a href="../images/gallery/painting14.jpeg" data-pswp-width="1453" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting14.jpeg" alt="Painting 14" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 14 · Acrylic on canvas</span>
+            </a>
+          </div>
+
+          <!-- Slide 2: painting3, painting4 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting3.jpeg" data-pswp-width="1025" data-pswp-height="1493" class="carousel-painting">
+              <img src="../images/gallery/painting3.jpeg" alt="Painting 3" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 3 · Acrylic on canvas</span>
+            </a>
+            <a href="../images/gallery/painting4.jpeg" data-pswp-width="937" data-pswp-height="1352" class="carousel-painting">
+              <img src="../images/gallery/painting4.jpeg" alt="Painting 4" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 4 · Oil on canvas</span>
+            </a>
+          </div>
+
+          <!-- Slide 3: painting5, painting6 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting5.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting5.jpeg" alt="Painting 5" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 5 · Acrylic on canvas</span>
+            </a>
+            <a href="../images/gallery/painting6.jpeg" data-pswp-width="1366" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting6.jpeg" alt="Painting 6" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 6 · Mixed media</span>
+            </a>
+          </div>
+
+          <!-- Slide 4: painting8, painting9, painting10 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting8.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting8.jpeg" alt="Painting 8" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 8 · Mixed media</span>
+            </a>
+            <a href="../images/gallery/painting9.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting9.jpeg" alt="Painting 9" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 9 · Oil on canvas</span>
+            </a>
+            <a href="../images/gallery/painting10.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting10.jpeg" alt="Painting 10" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 10 · Acrylic on canvas</span>
+            </a>
+          </div>
+
+          <!-- Slide 5: painting11, painting12 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting11.jpeg" data-pswp-width="1855" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting11.jpeg" alt="Painting 11" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 11 · Mixed media</span>
+            </a>
+            <a href="../images/gallery/painting12.jpeg" data-pswp-width="945" data-pswp-height="1016" class="carousel-painting">
+              <img src="../images/gallery/painting12.jpeg" alt="Painting 12" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Painting 12 · Acrylic on canvas</span>
+            </a>
+          </div>
+
+        </div><!-- /.carousel-track -->
+      </div><!-- /.carousel-track-wrapper -->
+
+      <button class="carousel-btn carousel-next" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div><!-- /.gallery-carousel -->
+
+    <div class="carousel-dots" aria-hidden="true">
+      <button class="carousel-dot active"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
     </div>
-
-    <!--
-      GALLERY INSTRUCTIONS:
-      To add real paintings:
-      1. Replace each href with the full-size image URL/path
-      2. Update data-pswp-width and data-pswp-height to match the actual image dimensions
-      3. Replace img src with thumbnail URL/path
-      4. Update alt text with painting title
-      5. Update .masonry-caption text with title and medium info
-
-      All images are placeholders from picsum.photos — swap these out when real artwork is ready.
-    -->
-
-    <div id="gallery" class="masonry-grid">
-
-      <!-- Painting 1 -->
-      <a href="https://picsum.photos/seed/gal1/1200/900"
-         data-pswp-width="1200" data-pswp-height="900"
-         class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal1/600/450" alt="Untitled I — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Untitled I · Acrylic on canvas · 60×80cm</span>
-      </a>
-
-      <!-- Painting 2 -->
-      <a href="https://picsum.photos/seed/gal2/900/1200"
-         data-pswp-width="900" data-pswp-height="1200"
-         class="masonry-item" data-category="figurative">
-        <img src="https://picsum.photos/seed/gal2/450/600" alt="Rising — Figurative" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Rising · Mixed media · 80×100cm</span>
-      </a>
-
-      <!-- Painting 3 -->
-      <a href="https://picsum.photos/seed/gal3/1200/800"
-         data-pswp-width="1200" data-pswp-height="800"
-         class="masonry-item" data-category="nature">
-        <img src="https://picsum.photos/seed/gal3/600/400" alt="Green Wild — Nature" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Green Wild · Acrylic on canvas · 100×70cm</span>
-      </a>
-
-      <!-- Painting 4 -->
-      <a href="https://picsum.photos/seed/gal4/1000/1300"
-         data-pswp-width="1000" data-pswp-height="1300"
-         class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal4/500/650" alt="Terra — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Terra · Oil on canvas · 70×90cm</span>
-      </a>
-
-      <!-- Painting 5 -->
-      <a href="https://picsum.photos/seed/gal5/1100/900"
-         data-pswp-width="1100" data-pswp-height="900"
-         class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal5/550/450" alt="Burn — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Burn · Acrylic on canvas · 80×65cm</span>
-      </a>
-
-      <!-- Painting 6 -->
-      <a href="https://picsum.photos/seed/gal6/900/1100"
-         data-pswp-width="900" data-pswp-height="1100"
-         class="masonry-item" data-category="figurative">
-        <img src="https://picsum.photos/seed/gal6/450/550" alt="She Dances — Figurative" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">She Dances · Mixed media · 60×75cm</span>
-      </a>
-
-      <!-- Painting 7 -->
-      <a href="https://picsum.photos/seed/gal7/1300/900"
-         data-pswp-width="1300" data-pswp-height="900"
-         class="masonry-item" data-category="nature">
-        <img src="https://picsum.photos/seed/gal7/650/450" alt="Forest Floor — Nature" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Forest Floor · Acrylic on canvas · 100×70cm</span>
-      </a>
-
-      <!-- Painting 8 -->
-      <a href="https://picsum.photos/seed/gal8/900/900"
-         data-pswp-width="900" data-pswp-height="900"
-         class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal8/450/450" alt="Gold — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Gold · Mixed media · 60×60cm</span>
-      </a>
-
-      <!-- Painting 9 -->
-      <a href="https://picsum.photos/seed/gal9/800/1200"
-         data-pswp-width="800" data-pswp-height="1200"
-         class="masonry-item" data-category="figurative">
-        <img src="https://picsum.photos/seed/gal9/400/600" alt="Roots — Figurative" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Roots · Oil on canvas · 50×75cm</span>
-      </a>
-
-      <!-- Painting 10 -->
-      <a href="https://picsum.photos/seed/gal10/1200/700"
-         data-pswp-width="1200" data-pswp-height="700"
-         class="masonry-item" data-category="nature">
-        <img src="https://picsum.photos/seed/gal10/600/350" alt="Wide Open — Nature" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Wide Open · Acrylic on canvas · 120×70cm</span>
-      </a>
-
-      <!-- Painting 11 -->
-      <a href="https://picsum.photos/seed/gal11/950/1200"
-         data-pswp-width="950" data-pswp-height="1200"
-         class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal11/475/600" alt="Depth — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Depth · Mixed media · 70×90cm</span>
-      </a>
-
-      <!-- Painting 12 -->
-      <a href="https://picsum.photos/seed/gal12/1100/750"
-         data-pswp-width="1100" data-pswp-height="750"
-         class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal12/550/375" alt="Red Earth — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Red Earth · Acrylic on canvas · 90×60cm</span>
-      </a>
-
-    </div><!-- /#gallery -->
 
   </section>
 
@@ -244,6 +204,39 @@
     </div>
   </footer>
 
+  <!-- Carousel -->
+  <script>
+  (function () {
+    var track   = document.querySelector('.carousel-track');
+    var slides  = document.querySelectorAll('.carousel-slide');
+    var prevBtn = document.querySelector('.carousel-prev');
+    var nextBtn = document.querySelector('.carousel-next');
+    var dots    = document.querySelectorAll('.carousel-dot');
+    var current = 0;
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === slides.length - 1;
+      dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+    }
+
+    prevBtn.addEventListener('click', function () { goTo(current - 1); });
+    nextBtn.addEventListener('click', function () { goTo(current + 1); });
+    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); }); });
+
+    var startX = 0;
+    var wrapper = document.querySelector('.carousel-track-wrapper');
+    wrapper.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    wrapper.addEventListener('touchend', function (e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    });
+
+    goTo(0);
+  }());
+  </script>
   <script src="../js/main.js"></script>
   <!-- PhotoSwipe 5 (ES module) -->
   <script type="module" src="../js/gallery.js"></script>

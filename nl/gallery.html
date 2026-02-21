@@ -62,99 +62,96 @@
   </header>
 
   <section class="gallery-section">
-    <div class="gallery-filters fade-up">
-      <button class="filter-btn active" data-filter="all">Alle Werken</button>
-      <button class="filter-btn" data-filter="abstract">Abstract</button>
-      <button class="filter-btn" data-filter="figurative">Figuratief</button>
-      <button class="filter-btn" data-filter="nature">Natuur</button>
-    </div>
+    <div class="gallery-carousel" id="gallery">
+      <button class="carousel-btn carousel-prev" aria-label="Vorige dia" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
 
-    <!--
-      GALERIE INSTRUCTIES:
-      Om echte schilderijen toe te voegen:
-      1. Vervang elke href door de URL/het pad van de afbeelding op ware grootte
-      2. Werk data-pswp-width en data-pswp-height bij naar de werkelijke afmetingen
-      3. Vervang img src door thumbnail URL/pad
-      4. Werk de alt-tekst bij met de naam van het schilderij
-      5. Werk de .masonry-caption tekst bij met titel en medium
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
 
-      Alle afbeeldingen zijn placeholders van picsum.photos — vervang deze wanneer het echte werk klaar is.
-    -->
+          <!-- Dia 1: schilderij1, schilderij2, schilderij14 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting1.jpeg" data-pswp-width="2515" data-pswp-height="3670" class="carousel-painting">
+              <img src="../images/gallery/painting1.jpeg" alt="Schilderij 1" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 1 · Acryl op doek</span>
+            </a>
+            <a href="../images/gallery/painting2.jpeg" data-pswp-width="1397" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting2.jpeg" alt="Schilderij 2" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 2 · Mixed media</span>
+            </a>
+            <a href="../images/gallery/painting14.jpeg" data-pswp-width="1453" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting14.jpeg" alt="Schilderij 14" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 14 · Acryl op doek</span>
+            </a>
+          </div>
 
-    <div id="gallery" class="masonry-grid">
+          <!-- Dia 2: schilderij3, schilderij4 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting3.jpeg" data-pswp-width="1025" data-pswp-height="1493" class="carousel-painting">
+              <img src="../images/gallery/painting3.jpeg" alt="Schilderij 3" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 3 · Acryl op doek</span>
+            </a>
+            <a href="../images/gallery/painting4.jpeg" data-pswp-width="937" data-pswp-height="1352" class="carousel-painting">
+              <img src="../images/gallery/painting4.jpeg" alt="Schilderij 4" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 4 · Olieverf op doek</span>
+            </a>
+          </div>
 
-      <a href="https://picsum.photos/seed/gal1/1200/900" data-pswp-width="1200" data-pswp-height="900" class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal1/600/450" alt="Zonder Titel I — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Zonder Titel I · Acryl op doek · 60×80cm</span>
-      </a>
+          <!-- Dia 3: schilderij5, schilderij6 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting5.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting5.jpeg" alt="Schilderij 5" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 5 · Acryl op doek</span>
+            </a>
+            <a href="../images/gallery/painting6.jpeg" data-pswp-width="1366" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting6.jpeg" alt="Schilderij 6" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 6 · Mixed media</span>
+            </a>
+          </div>
 
-      <a href="https://picsum.photos/seed/gal2/900/1200" data-pswp-width="900" data-pswp-height="1200" class="masonry-item" data-category="figurative">
-        <img src="https://picsum.photos/seed/gal2/450/600" alt="Opstijgen — Figuratief" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Opstijgen · Mixed media · 80×100cm</span>
-      </a>
+          <!-- Dia 4: schilderij8, schilderij9, schilderij10 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting8.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting8.jpeg" alt="Schilderij 8" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 8 · Mixed media</span>
+            </a>
+            <a href="../images/gallery/painting9.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting9.jpeg" alt="Schilderij 9" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 9 · Olieverf op doek</span>
+            </a>
+            <a href="../images/gallery/painting10.jpeg" data-pswp-width="1332" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting10.jpeg" alt="Schilderij 10" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 10 · Acryl op doek</span>
+            </a>
+          </div>
 
-      <a href="https://picsum.photos/seed/gal3/1200/800" data-pswp-width="1200" data-pswp-height="800" class="masonry-item" data-category="nature">
-        <img src="https://picsum.photos/seed/gal3/600/400" alt="Groen Wild — Natuur" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Groen Wild · Acryl op doek · 100×70cm</span>
-      </a>
+          <!-- Dia 5: schilderij11, schilderij12 -->
+          <div class="carousel-slide">
+            <a href="../images/gallery/painting11.jpeg" data-pswp-width="1855" data-pswp-height="1998" class="carousel-painting">
+              <img src="../images/gallery/painting11.jpeg" alt="Schilderij 11" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 11 · Mixed media</span>
+            </a>
+            <a href="../images/gallery/painting12.jpeg" data-pswp-width="945" data-pswp-height="1016" class="carousel-painting">
+              <img src="../images/gallery/painting12.jpeg" alt="Schilderij 12" loading="lazy">
+              <span class="masonry-caption" style="display:none;">Schilderij 12 · Acryl op doek</span>
+            </a>
+          </div>
 
-      <a href="https://picsum.photos/seed/gal4/1000/1300" data-pswp-width="1000" data-pswp-height="1300" class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal4/500/650" alt="Terra — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Terra · Olieverf op doek · 70×90cm</span>
-      </a>
+        </div><!-- /.carousel-track -->
+      </div><!-- /.carousel-track-wrapper -->
 
-      <a href="https://picsum.photos/seed/gal5/1100/900" data-pswp-width="1100" data-pswp-height="900" class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal5/550/450" alt="Branden — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Branden · Acryl op doek · 80×65cm</span>
-      </a>
+      <button class="carousel-btn carousel-next" aria-label="Volgende dia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div><!-- /.gallery-carousel -->
 
-      <a href="https://picsum.photos/seed/gal6/900/1100" data-pswp-width="900" data-pswp-height="1100" class="masonry-item" data-category="figurative">
-        <img src="https://picsum.photos/seed/gal6/450/550" alt="Zij Danst — Figuratief" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Zij Danst · Mixed media · 60×75cm</span>
-      </a>
-
-      <a href="https://picsum.photos/seed/gal7/1300/900" data-pswp-width="1300" data-pswp-height="900" class="masonry-item" data-category="nature">
-        <img src="https://picsum.photos/seed/gal7/650/450" alt="Bosbodem — Natuur" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Bosbodem · Acryl op doek · 100×70cm</span>
-      </a>
-
-      <a href="https://picsum.photos/seed/gal8/900/900" data-pswp-width="900" data-pswp-height="900" class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal8/450/450" alt="Goud — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Goud · Mixed media · 60×60cm</span>
-      </a>
-
-      <a href="https://picsum.photos/seed/gal9/800/1200" data-pswp-width="800" data-pswp-height="1200" class="masonry-item" data-category="figurative">
-        <img src="https://picsum.photos/seed/gal9/400/600" alt="Wortels — Figuratief" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Wortels · Olieverf op doek · 50×75cm</span>
-      </a>
-
-      <a href="https://picsum.photos/seed/gal10/1200/700" data-pswp-width="1200" data-pswp-height="700" class="masonry-item" data-category="nature">
-        <img src="https://picsum.photos/seed/gal10/600/350" alt="Wijd Open — Natuur" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Wijd Open · Acryl op doek · 120×70cm</span>
-      </a>
-
-      <a href="https://picsum.photos/seed/gal11/950/1200" data-pswp-width="950" data-pswp-height="1200" class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal11/475/600" alt="Diepte — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Diepte · Mixed media · 70×90cm</span>
-      </a>
-
-      <a href="https://picsum.photos/seed/gal12/1100/750" data-pswp-width="1100" data-pswp-height="750" class="masonry-item" data-category="abstract">
-        <img src="https://picsum.photos/seed/gal12/550/375" alt="Rode Aarde — Abstract" loading="lazy">
-        <div class="masonry-overlay"><span>+</span></div>
-        <span class="masonry-caption" style="display:none;">Rode Aarde · Acryl op doek · 90×60cm</span>
-      </a>
-
+    <div class="carousel-dots" aria-hidden="true">
+      <button class="carousel-dot active"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
     </div>
   </section>
 
@@ -186,6 +183,39 @@
     </div>
   </footer>
 
+  <!-- Carousel -->
+  <script>
+  (function () {
+    var track   = document.querySelector('.carousel-track');
+    var slides  = document.querySelectorAll('.carousel-slide');
+    var prevBtn = document.querySelector('.carousel-prev');
+    var nextBtn = document.querySelector('.carousel-next');
+    var dots    = document.querySelectorAll('.carousel-dot');
+    var current = 0;
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === slides.length - 1;
+      dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+    }
+
+    prevBtn.addEventListener('click', function () { goTo(current - 1); });
+    nextBtn.addEventListener('click', function () { goTo(current + 1); });
+    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); }); });
+
+    var startX = 0;
+    var wrapper = document.querySelector('.carousel-track-wrapper');
+    wrapper.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    wrapper.addEventListener('touchend', function (e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    });
+
+    goTo(0);
+  }());
+  </script>
   <script src="../js/main.js"></script>
   <script type="module" src="../js/gallery.js"></script>
 </body>

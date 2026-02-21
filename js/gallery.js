@@ -6,7 +6,7 @@ import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/p
 
 const lightbox = new PhotoSwipeLightbox({
   gallery:    '#gallery',
-  children:   'a.masonry-item',
+  children:   'a.carousel-painting',
   pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js'),
 
   /* Styling */
