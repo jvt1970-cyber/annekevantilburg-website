@@ -292,6 +292,88 @@ body:has(button:hover) .cursor-ring {
   color: var(--terracotta);
 }
 
+/* ── Coming Soon Nav Links ──────────────────────────────── */
+.nav-link--soon {
+  opacity: 0.42;
+  cursor: default;
+}
+
+.nav-link--soon::after {
+  display: none !important; /* suppress underline animation */
+}
+
+.nav-link--soon::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--dark);
+  color: var(--bg);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 200;
+}
+
+.nav-link--soon:hover {
+  color: rgba(244,248,240,0.88);
+}
+
+.nav-link--soon:hover::before {
+  opacity: 1;
+}
+
+#main-nav.scrolled .nav-link--soon:hover {
+  color: var(--text-mid);
+}
+
+/* Mobile overlay: coming soon */
+.overlay-nav .nav-link--soon {
+  opacity: 0.38;
+  cursor: default;
+  position: relative;
+}
+
+.overlay-nav .nav-link--soon::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--dark);
+  color: var(--bg);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 200;
+}
+
+.overlay-nav .nav-link--soon:hover {
+  color: inherit;
+  opacity: 0.38;
+}
+
+.overlay-nav .nav-link--soon:hover::before {
+  opacity: 1;
+}
+
 .nav-right {
   display: flex;
   align-items: center;
