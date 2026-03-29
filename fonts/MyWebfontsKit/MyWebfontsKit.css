@@ -1,0 +1,22 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Anisha Regular by 38-lineart
+ * URL: https://www.myfonts.com/collections/38-lineart-foundry
+ 
+ * © 2026 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "AnishaRegular";
+  src: url('webFonts/AnishaRegular/font.woff2') format('woff2'), url('webFonts/AnishaRegular/font.woff') format('woff');
+}
+

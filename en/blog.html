@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Over Mij | Anneke van Tilburg</title>
-  <meta name="description" content="Het verhaal van Anneke van Tilburg: Nederlandse creatieveling, schilder, DJ en embodied coach.">
-  <link rel="alternate" hreflang="nl" href="about.html">
-  <link rel="alternate" hreflang="en" href="../en/about.html">
+  <title>Blog | Anneke van Tilburg</title>
+  <meta name="description" content="Stories, insights and inspiration from Anneke van Tilburg.">
+  <link rel="alternate" hreflang="en" href="blog.html">
+  <link rel="alternate" hreflang="nl" href="../nl/blog.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,36 +18,37 @@
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-ring" aria-hidden="true"></div>
 
-  <nav id="main-nav" aria-label="Hoofdnavigatie">
+  <!-- Navigation -->
+  <nav id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Anneke van Tilburg</a>
       <div class="nav-links">
         <div class="nav-dropdown">
-          <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Intuëtief Schilderen <svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
+          <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Intuitive Painting <svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
           <div class="nav-dropdown-menu">
-            <a href="painting.html" class="nav-dropdown-item">Schilderworkshops</a>
-            <a href="gallery.html" class="nav-dropdown-item">Galerie</a>
+            <a href="painting.html" class="nav-dropdown-item">Painting Workshops</a>
+            <a href="gallery.html" class="nav-dropdown-item">Gallery</a>
           </div>
         </div>
         <div class="nav-dropdown">
-          <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Dansen <svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
+          <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Dances <svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
           <div class="nav-dropdown-menu">
-            <a href="djsets.html" class="nav-dropdown-item">Boek DJ Sets</a>
-            <a href="farmdances.html" class="nav-dropdown-item">Boerderijdansen</a>
+            <a href="djsets.html" class="nav-dropdown-item">Book DJ Sets</a>
+            <a href="farmdances.html" class="nav-dropdown-item">Farm Dances</a>
           </div>
         </div>
         <a href="coaching.html" class="nav-link">Coaching</a>
-        <a href="about.html" class="nav-link active">Over Mij</a>
-        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
       </div>
       <div class="nav-right">
         <div class="lang-toggle">
-          <a href="../en/about.html" class="lang-btn">EN</a>
+          <a href="blog.html" class="lang-btn active">EN</a>
           <span class="lang-sep">/</span>
-          <a href="about.html" class="lang-btn active">NL</a>
+          <a href="../nl/blog.html" class="lang-btn">NL</a>
         </div>
         <a href="contact.html" class="btn-nav">Contact</a>
-        <button class="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -55,74 +56,54 @@
   </nav>
 
   <div class="menu-overlay" id="menu-overlay" role="dialog">
-    <button class="menu-close" aria-label="Menu sluiten">✕</button>
+    <button class="menu-close" aria-label="Close menu">&#x2715;</button>
     <nav class="overlay-nav">
-      <a href="painting.html">Schilderworkshops</a>
-      <a href="gallery.html">Galerie</a>
-      <a href="djsets.html">Boek DJ Sets</a>
-      <a href="farmdances.html">Boerderijdansen</a>
+      <a href="painting.html">Painting Workshops</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="djsets.html">Book DJ Sets</a>
+      <a href="farmdances.html">Farm Dances</a>
       <a href="coaching.html">Coaching</a>
-      <a href="about.html">Over Mij</a>
+      <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
       <div class="overlay-lang">
-        <a href="../en/about.html">EN</a> / <a href="about.html" class="active">NL</a>
+        <a href="blog.html" class="active">EN</a> / <a href="../nl/blog.html">NL</a>
       </div>
     </nav>
   </div>
 
-  <header class="page-hero">
-    <div class="page-hero-bg">
-      <!--VERVANG: foto van Anneke in het atelier of achter de draaitafels-->
-      <img src="../images/about/klaprozen.jpg" alt="Anneke van Tilburg">
-    </div>
+  <!-- Page Hero -->
+  <header class="page-hero" style="background: var(--bg-secondary);">
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
-      <p class="eyebrow">Haar Verhaal</p>
-      <h1>Over Anneke</h1>
+      <p class="eyebrow">Blog</p>
+      <h1>Blog</h1>
     </div>
   </header>
 
-  <!-- Introductie -->
-  <section class="content-section">
-    <div class="two-col">
-      <div class="col-text fade-left">
-        <p class="eyebrow">Wie ze is</p>
-        <h2>Een creatieveling met een passie voor verandering</h2>
-        <p>Ik werk met drie vormen van expressie: coaching, muziek en schilderen. Meestal afzonderlijk, elk met een eigen ingang. Wat ze delen is de richting: onder de oppervlakte, naar wat vastzit, wat vergeten is, wat weer wil stromen. Mijn kompas is simpel: van over-leven naar leven, met plezier!</p>
-        <p>Sinds 1998 coach ik mensen die voelen dat er iets mag verschuiven, maar nog niet precies weten wat en hoe. Ik werk niet met vaste methodes; ik werk met wat er nú is. Soms is dat taal, soms stilte. Maar meestal het lichaam dat eindelijk eerlijk mag zijn.</p>
-        <p>Zes jaar geleden herontdekte ik het schilderen: een taal voorbij woorden. Verf en beeld brengen me terug naar intuïtie, spel en vrijheid, ontdekken door te volgen wat zich wil laten zien.</p>
-        <p>Ook in muziek kies ik voor diezelfde eerlijkheid. Op mijn 55e stapte ik achter de draaitafel om een droom te volgen. Ik ben niet van effecten en trucjes; ik deel muziek het liefst zo puur mogelijk, zodat je haar echt kunt vóelen. Mijn stijl is intuïtief en eclectisch: Latin, soul, tropical rhythms, funk, reggae, (afro)house, medicine music, crossover en wereldmuziek. Een uitnodiging om te bewegen, te voelen en te verbinden.</p>
+  <!-- Blog Articles -->
+  <section style="padding: 80px 40px; max-width: 860px; margin: 0 auto;">
+    <p class="eyebrow" style="margin-bottom: 48px;">Latest</p>
+
+    <article style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 64px; border-bottom: 1px solid var(--bg-secondary);">
+      <p style="font-family: 'Aleo', serif; font-size: 0.85rem; color: var(--text-light); font-style: italic; margin: 0;">March 2026</p>
+      <h2 style="font-family: 'Outfit', sans-serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: var(--dark); line-height: 1.2; margin: 0;">
+        <a href="blog-post-1.html" style="color: inherit; text-decoration: none;">Why I Changed My Set at the Last Minute</a>
+      </h2>
+      <p style="max-width: 620px; margin: 0; color: var(--text-mid);">Listening back to my extended "Superstition" set, the one I originally planned to play at Ecstatic Dance Maastricht on March 13th, I now fully understand why I chose the set I eventually performed instead.</p>
+      <div style="margin-top: 8px;">
+        <a href="blog-post-1.html" class="btn btn-outline">Read More</a>
       </div>
-      <div class="col-image scale-in delay-2">
-        <img src="../images/about/IMG_5710.jpg" alt="Portret van Anneke van Tilburg">
-      </div>
-    </div>
+    </article>
   </section>
 
-  <!-- Binnenkort -->
-  <section style="padding: 120px 40px; background: var(--bg); text-align: center;">
-    <p class="fade-up" style="font-family: 'Lora', serif; font-size: clamp(1.05rem, 2.5vw, 1.35rem); color: var(--text-mid); max-width: 580px; margin: 0 auto; line-height: 1.9; font-style: italic;">
-      Binnenkort is de rest van de website toegankelijk met meer informatie.
-    </p>
-  </section>
-
-  <!-- CTA -->
-  <section style="padding:100px 40px; background:var(--terracotta); text-align:center;">
-    <p class="eyebrow fade-up" style="color:rgba(255,255,255,0.7);">Klaar om te beginnen?</p>
-    <h2 class="fade-up delay-1" style="color:var(--white); margin:12px 0 24px;">Vind jouw ingang</h2>
-    <p class="fade-up delay-2" style="color:rgba(255,255,255,0.8); max-width:480px; margin:0 auto 40px;">Workshops, dansevenementen of coaching: neem contact op en vraag.</p>
-    <div class="fade-up delay-3" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-      <a href="contact.html"  class="btn btn-outline" style="border-color:var(--cream); color:var(--cream);">Neem Contact Op</a>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="footer-logo">Anneke van Tilburg</a>
-          <p>Intuïtief schilder, ecstatic dance DJ en embodied coach, die ruimtes creëert waar mensen terugkeren naar zichzelf.</p>
+          <p>Intuitive painter, ecstatic dance DJ, and embodied coach, creating spaces where people return to themselves.</p>
           <div class="footer-social">
             <a href="https://www.instagram.com/anneke_van_tilburg" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ig-foot" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#ig-foot)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
             <a href="https://www.linkedin.com/in/anneke-van-tilburg-b34a20a" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="#0077B5" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a>
@@ -131,19 +112,19 @@
           </div>
         </div>
         <div class="footer-col">
-          <h5>Verkennen</h5>
+          <h5>Explore</h5>
           <ul>
-            <li><a href="painting.html">Schilderworkshops</a></li>
-            <li><a href="djsets.html">Boek DJ Sets</a></li>
-            <li><a href="farmdances.html">Boerderijdansen</a></li>
-            <li><a href="gallery.html">Kunstgalerie</a></li>
+            <li><a href="painting.html">Painting Workshops</a></li>
+            <li><a href="djsets.html">Book DJ Sets</a></li>
+            <li><a href="farmdances.html">Female Farm Dances</a></li>
+            <li><a href="gallery.html">Art Gallery</a></li>
             <li><a href="coaching.html">Coaching</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>Verbinden</h5>
+          <h5>Connect</h5>
           <ul>
-            <li><a href="about.html">Over Anneke</a></li>
+            <li><a href="about.html">About Anneke</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="https://www.instagram.com/anneke_van_tilburg" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="https://www.linkedin.com/in/anneke-van-tilburg-b34a20a" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -152,11 +133,11 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 Anneke van Tilburg. Alle rechten voorbehouden.</p>
-        <p>Gemaakt met zorg en kleur.</p>
+        <p>&#169; 2024 Anneke van Tilburg. All rights reserved.</p>
+        <p>Made with care and colour.</p>
       </div>
       <div class="footer-legal">
-        <p style="color:rgba(244,248,240,0.55)">KvK nummer: 98452614 | BTW nummer: NL005332625B11 &nbsp;&middot;&nbsp; <a href="privacy-nl.html">Privacyverklaring</a></p>
+        <p style="color:rgba(244,248,240,0.55)">KvK nummer: 98452614 | BTW nummer: NL005332625B11 &nbsp;&middot;&nbsp; <a href="privacy-en.html">Privacy Policy</a></p>
         <p style="color:rgba(244,248,240,0.55)">&copy; 2026 J&amp;A</p>
       </div>
     </div>
